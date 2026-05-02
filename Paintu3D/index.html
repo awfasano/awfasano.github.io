@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paintu3D - Spatial Painting for Apple Vision Pro</title>
+    <meta name="description" content="Paintu3D is a native Apple Vision Pro app for spatial drawing. Canvas painting and surface painting are coming soon.">
+    <meta property="og:title" content="Paintu3D">
+    <meta property="og:description" content="Spatial drawing for Apple Vision Pro. Canvas painting and surface painting are coming soon.">
+    <meta property="og:image" content="https://awfasano.github.io/Paintu3D/assets/paintu3d-hero.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#075f65">
+    <link rel="icon" href="assets/brand-icon-top.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="./" aria-label="Paintu3D home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/brand-icon-base.png" alt="">
+            <img src="assets/brand-icon-middle.png" alt="">
+            <img src="assets/brand-icon-top.png" alt="">
+          </span>
+          <span>Paintu3D</span>
+        </a>
+        <div class="nav-links">
+          <a href="#product">Product</a>
+          <a href="privacy/">Privacy</a>
+          <a href="support/">Support</a>
+          <a class="button primary" href="#app-store">Coming to Vision Pro</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Native visionOS painting</p>
+          <h1 id="hero-title">Paintu3D</h1>
+          <p class="hero-lede">Create with depth. Draw strokes that live in 3D space, stay anchored where you place them, and can be revisited from any angle.</p>
+          <div class="hero-actions" id="app-store">
+            <a class="button primary" href="support/">Get launch updates</a>
+            <a class="button secondary" href="privacy/">Read privacy policy</a>
+          </div>
+          <div class="hero-note" aria-label="Product highlights">
+            <span><span class="dot" aria-hidden="true"></span>Built for Apple Vision Pro</span>
+            <span><span class="dot" aria-hidden="true"></span>No account required</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="product">
+        <div class="section-inner">
+          <div class="section-heading">
+            <h2>Spatial drawing now. More studio modes next.</h2>
+            <p>Paintu3D launches around anchored 3D strokes for Apple Vision Pro. Canvas painting and surface painting are planned next.</p>
+          </div>
+          <div class="feature-grid" aria-label="Painting modes">
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon" aria-hidden="true">3D</div>
+                <h3>Spatial drawing</h3>
+                <p>Draw pressure-aware strokes as real 3D geometry inside a fixed drawing volume that stays where you place it.</p>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon" aria-hidden="true">C</div>
+                <h3>Canvas painting</h3>
+                <p><strong>Coming soon.</strong> A virtual easel mode for layered painting, familiar brush workflows, and export-ready artwork.</p>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon" aria-hidden="true">S</div>
+                <h3>Surface painting</h3>
+                <p><strong>Coming soon.</strong> A room-aware mode for turning real surfaces into part of the painting experience.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-inner split">
+          <div>
+            <p class="eyebrow">Built like a real studio tool</p>
+            <h2>Designed for repeated making, not a one-off demo.</h2>
+          <p class="wide-copy">Paintu3D combines SwiftUI, RealityKit, Apple sensing APIs, and Metal-backed geometry so spatial strokes feel immediate and stored projects reopen cleanly.</p>
+          </div>
+          <div class="metric-panel" aria-label="Technical highlights">
+            <div class="metric-row">
+              <div class="metric-value">Metal</div>
+              <p>Fast spatial stroke generation with textured, material-aware 3D geometry.</p>
+            </div>
+            <div class="metric-row">
+              <div class="metric-value">Sensing</div>
+              <p>Hand tracking and world tracking help place and draw work in a stable space.</p>
+            </div>
+            <div class="metric-row">
+              <div class="metric-value">Local</div>
+              <p>Projects are saved on device by default, without an account or analytics pipeline.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-heading">
+            <h2>Privacy is part of the product.</h2>
+            <p>Paintu3D does not need an account, advertising profile, or analytics pipeline to let people make art.</p>
+          </div>
+          <div class="privacy-strip">
+            <article class="info-card">
+              <h3>On-device by default</h3>
+              <p>Project files, brush settings, and spatial drawing data live locally unless the user chooses to share them.</p>
+            </article>
+            <article class="info-card">
+              <h3>Clear permission reasons</h3>
+              <p>Hand tracking supports drawing input, and world sensing helps keep spatial work anchored.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 Paintu3D. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="privacy/">Privacy</a>
+          <a href="support/">Support</a>
+          <a href="accessibility/">Accessibility</a>
+          <a href="press/">Press</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

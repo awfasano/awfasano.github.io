@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessibility - Paintu3D</title>
+    <meta name="description" content="Accessibility information for Paintu3D.">
+    <meta name="theme-color" content="#075f65">
+    <link rel="icon" href="../assets/brand-icon-top.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../" aria-label="Paintu3D home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="../assets/brand-icon-base.png" alt="">
+            <img src="../assets/brand-icon-middle.png" alt="">
+            <img src="../assets/brand-icon-top.png" alt="">
+          </span>
+          <span>Paintu3D</span>
+        </a>
+        <div class="nav-links">
+          <a href="../#product">Product</a>
+          <a href="../privacy/">Privacy</a>
+          <a href="../support/">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="section-inner">
+          <p class="eyebrow">Accessibility</p>
+          <h1>Paintu3D accessibility notes</h1>
+          <p>Paintu3D is a spatial creative app. These notes summarize current interaction support and known areas to verify before launch.</p>
+        </div>
+      </section>
+
+      <article class="content">
+        <h2>Current interaction support</h2>
+        <ul>
+          <li>Hand tracking can be adjusted with smoothing settings.</li>
+          <li>Drawing can use a selected draw hand while the other hand controls the selection window.</li>
+          <li>Spatial drawing bounds stay fixed after placement, and the Digital Crown/right-side button can recenter the space at current head height.</li>
+          <li>Text-based controls use SwiftUI system components where possible.</li>
+        </ul>
+
+        <h2>Before App Store submission</h2>
+        <p>Verify App Store accessibility responses against the final build, especially for hand-only interactions, spatial controls, dynamic text behavior, and any features that require precise pinch input.</p>
+
+        <div class="contact-box">
+          <strong>Accessibility feedback</strong>
+          <p>Email: <a href="mailto:awfasano@gmail.com?subject=Paintu3D%20accessibility%20feedback">awfasano@gmail.com</a></p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 Paintu3D. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="../privacy/">Privacy</a>
+          <a href="../support/">Support</a>
+          <a href="../accessibility/">Accessibility</a>
+          <a href="../press/">Press</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
