@@ -22,6 +22,7 @@
         </a>
         <div class="nav-links">
           <a href="../#product">Product</a>
+          <a href="../community/">Community</a>
           <a href="../privacy/">Privacy</a>
           <a href="../support/">Support</a>
         </div>
@@ -31,41 +32,64 @@
     <main>
       <section class="page-hero">
         <div class="section-inner">
-          <p class="eyebrow">Last updated April 29, 2026</p>
+          <p class="eyebrow">Last updated August 2, 2026</p>
           <h1>Privacy Policy</h1>
-          <p>Paintu3D is designed as an on-device creative tool. This policy explains what the app uses, what stays local, and how to contact support.</p>
+          <p>Paintu3D is local by default and offers optional cloud sharing. This policy explains what stays on your device, what is sent when you use cloud features, and the choices available to you.</p>
         </div>
       </section>
 
       <article class="content">
         <h2>Overview</h2>
-        <p>Paintu3D does not require an account. Paintu3D does not include advertising, cross-app tracking, or third-party analytics SDKs.</p>
+        <p>Paintu3D does not require an email address, password, or social sign-in. Paintu3D does not include advertising or cross-app tracking. Local painting works without using the Public Gallery or Shared Spaces (Beta).</p>
 
         <h2>Information the app stores locally</h2>
         <p>Paintu3D may store the following on your device so the app can work:</p>
         <ul>
-          <li>Spatial drawing projects, colors, brush settings, strokes, thumbnails, and files you create.</li>
+          <li>Spatial, floating-canvas, and wall-painting projects; colors; brush settings; strokes; thumbnails; and files you create.</li>
           <li>App preferences such as onboarding completion, draw-hand selection, gesture settings, and smoothing settings.</li>
+          <li>A random launch-session identifier and first-use milestones used by the optional anonymous product analytics described below.</li>
         </ul>
-        <p>This information is stored locally on your device unless you choose to export, share, back up, or otherwise move it using Apple system features.</p>
+        <p>Projects remain on your device unless you explicitly publish a piece, enter a Shared Space, export or share a file, or pin a floating canvas to the Paintu3D widget.</p>
+
+        <h2>Optional cloud features</h2>
+        <p>Paintu3D uses Google Firebase when you use Public Gallery, Shared Spaces, in-app reports, or anonymous usage analytics. Firebase creates an anonymous user identifier; Paintu3D does not receive your Apple Account credentials.</p>
+        <ul>
+          <li><strong>Public Gallery:</strong> when you choose Publish, Paintu3D uploads your public display name, artwork title, thumbnail, read-only spatial snapshot, anonymous user identifier, app version, and timestamps. Public pieces can be viewed and saved as local copies by other signed-in Paintu3D users.</li>
+          <li><strong>Shared Spaces (Beta):</strong> when you create or join an unlisted space, Paintu3D stores the space title and join code, membership and presence records, display names, completed stroke payloads, optional FaceTime link, Talk status, anonymous user identifiers, and timestamps. Paintu3D uploads completed strokes rather than continuously streaming raw hand movement.</li>
+          <li><strong>Reports and support:</strong> when you submit an in-app content or bug report, Paintu3D stores the report text, related content or space identifiers, your public display name, anonymous user identifier, app version, status, and timestamp so the report can be reviewed.</li>
+        </ul>
+        <p>Public Gallery posts are public within Paintu3D. Shared Spaces are unlisted but anyone with a valid join code may be able to enter. Do not publish personal, confidential, or unsafe information.</p>
+        <p>Cloud participation is also governed by the <a href="../community/">Paintu3D Community Guidelines</a>. Public pieces and Shared Spaces can be reported, and Public Gallery authors can be blocked on the device.</p>
+
+        <h2>Anonymous product analytics</h2>
+        <p>Paintu3D may send coarse product-interaction events, such as whether a project was created, a first stroke was completed, an export succeeded, or a Shared Space was joined. These events include a random launch-session identifier, app and build version, project category, event outcome, coarse count bucket, and timestamp. They do not include artwork, project titles, room codes, persistent device identifiers, Firebase user identifiers, display names, brush settings, stroke points, hand-tracking data, or FaceTime links.</p>
+        <p>This collection is off until you choose to enable it in <strong>Settings &gt; Privacy &gt; Share Anonymous Usage Analytics</strong>, and you can turn it off again at any time. Firebase Anonymous Authentication authorizes the write, but the analytics event document does not store the Firebase user identifier.</p>
 
         <h2>Permissions</h2>
         <p>Paintu3D requests only the system permissions needed for its painting features:</p>
         <ul>
           <li><strong>Hand tracking:</strong> used to let you paint with your hands when a stylus is not available.</li>
-          <li><strong>World sensing:</strong> used to anchor spatial drawing projects in your room. Future surface-painting features may use it to detect real-world surfaces.</li>
+          <li><strong>World sensing:</strong> used to anchor spatial work and identify nearby surfaces for wall painting.</li>
           <li><strong>Photo Library add access:</strong> used only if you choose to save exported artwork to Photos.</li>
         </ul>
-        <p>Paintu3D does not receive or upload raw hand-tracking or room-scanning data to a developer server.</p>
+        <p>Paintu3D does not upload raw hand-tracking or room-scanning data to a developer server.</p>
+
+        <h2>FaceTime and SharePlay</h2>
+        <p>Talk is optional. FaceTime and test-build SharePlay features are Apple system services governed by Apple's privacy terms. A Shared Space owner may save a reusable FaceTime web link in the space; other members can choose whether to open it. SharePlay is not enabled in the App Store Release build while two-participant behavior remains under validation. Paintu3D does not record calls or receive their audio or video.</p>
+
+        <h2>Service providers</h2>
+        <p>Google Firebase and Google Cloud process cloud data for authentication, database, file storage, and private operational monitoring. Firebase SDKs may also collect operational diagnostic data that is not linked to your identity to provide and monitor these services. Apple processes system sharing, Photos, widgets, FaceTime, and SharePlay according to Apple's policies. Paintu3D does not sell personal data.</p>
 
         <h2>Feedback and support</h2>
-        <p>If you email support, your email address and the information you include in the message will be used to respond to your request. Email is handled by the email providers involved in sending and receiving the message.</p>
+        <p>If you email support, your email address and the information you include are used to respond to your request. Email is handled by the providers involved in sending and receiving the message.</p>
 
-        <h2>Data deletion and choices</h2>
-        <p>You can delete Paintu3D projects from inside the app where available, delete exports from Photos, or remove the app from your device to delete app-local data managed by visionOS. For support email records, contact us and request deletion.</p>
+        <h2 id="data-choices">Data deletion and choices</h2>
+        <p>You can delete local projects in the app, unpublish Public Gallery pieces you own, leave or forget Shared Spaces, delete exports from Photos, and disable anonymous usage analytics. Removing the app deletes app-local data managed by visionOS but does not automatically remove content you previously uploaded.</p>
+        <p>To permanently delete the automatically generated cloud account and its associated Public Gallery pieces, shared strokes, memberships, owned spaces, profile, reports, and stored payloads, use <strong>Settings &gt; Privacy &gt; Delete Cloud Account and Data</strong>. The request signs the cloud account out immediately, leaves local paintings on the device, and is completed within seven days.</p>
+        <p>For questions about a deletion request or to request deletion of support email records, email <a href="mailto:awfasano@gmail.com?subject=Paintu3D%20data%20deletion">awfasano@gmail.com</a>.</p>
 
         <h2>Children</h2>
-        <p>Paintu3D is not intended to knowingly collect personal information from children. The app does not require account creation or collect personal profiles.</p>
+        <p>Paintu3D is not directed to children under 13. Do not submit personal information about a child through public, shared, reporting, or support features. If you believe a child has provided personal information, contact us so it can be reviewed and removed.</p>
 
         <h2>Changes to this policy</h2>
         <p>This policy may be updated as Paintu3D changes. Material updates will be reflected on this page with a new updated date.</p>
@@ -81,6 +105,7 @@
       <div class="footer-inner">
         <span>© 2026 Paintu3D. All rights reserved.</span>
         <div class="footer-links">
+          <a href="../community/">Community</a>
           <a href="../privacy/">Privacy</a>
           <a href="../support/">Support</a>
           <a href="../accessibility/">Accessibility</a>

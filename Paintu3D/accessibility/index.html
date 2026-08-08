@@ -22,6 +22,7 @@
         </a>
         <div class="nav-links">
           <a href="../#product">Product</a>
+          <a href="../community/">Community</a>
           <a href="../privacy/">Privacy</a>
           <a href="../support/">Support</a>
         </div>
@@ -33,21 +34,23 @@
         <div class="section-inner">
           <p class="eyebrow">Accessibility</p>
           <h1>Paintu3D accessibility notes</h1>
-          <p>Paintu3D is a spatial creative app. These notes summarize current interaction support and known areas to verify before launch.</p>
+          <p>Paintu3D includes adjustable input and visual settings for a more comfortable spatial painting experience.</p>
         </div>
       </section>
 
       <article class="content">
         <h2>Current interaction support</h2>
         <ul>
-          <li>Hand tracking can be adjusted with smoothing settings.</li>
-          <li>Drawing can use a selected draw hand while the other hand controls the selection window.</li>
-          <li>Spatial drawing bounds stay fixed after placement, and the Digital Crown/right-side button can recenter the space at current head height.</li>
-          <li>Text-based controls use SwiftUI system components where possible.</li>
+          <li>Choose a dominant drawing hand and use either a pinch or extended-index drawing gesture.</li>
+          <li>Adjust hand smoothing to balance jitter reduction and fast-stroke responsiveness.</li>
+          <li>Use the separate controls window with the non-drawing hand while painting.</li>
+          <li>Reduce Visual Effects lowers the intensity of high-luminance cosmic and neon brushes.</li>
+          <li>Recenter controls restore spatial work if its placement becomes uncomfortable or hard to reach.</li>
+          <li>Standard SwiftUI controls include accessibility labels and system focus behavior throughout the library and settings.</li>
         </ul>
 
-        <h2>Before App Store submission</h2>
-        <p>Verify App Store accessibility responses against the final build, especially for hand-only interactions, spatial controls, dynamic text behavior, and any features that require precise pinch input.</p>
+        <h2>Spatial input</h2>
+        <p>Painting gestures depend on tracked hand movement or a supported spatial input device. Controls for creating, saving, exporting, retrying, and recentering remain available in standard windows. Accessibility support may vary by painting mode because freehand spatial drawing requires three-dimensional pointing.</p>
 
         <div class="contact-box">
           <strong>Accessibility feedback</strong>
@@ -60,6 +63,7 @@
       <div class="footer-inner">
         <span>© 2026 Paintu3D. All rights reserved.</span>
         <div class="footer-links">
+          <a href="../community/">Community</a>
           <a href="../privacy/">Privacy</a>
           <a href="../support/">Support</a>
           <a href="../accessibility/">Accessibility</a>
